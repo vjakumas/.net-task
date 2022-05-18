@@ -1,0 +1,48 @@
+{
+  "meetings": [
+    {
+      "name": "First meeting",
+      "responsibleUser": "Tomas",
+      "description": "First meeting of this program",
+      "category": "Short",
+      "type": "Live",
+      "dateStart": "5/17/2022 4:50:00 PM",
+      "dateEnd": "5/17/2022 5:50:00 PM",
+      "users": [
+        "Tadas",
+        "Jonas",
+        "Birute"
+      ]
+    },
+    {
+      "name": "Daily meeting",
+      "responsibleUser": "Jonas",
+      "description": "Daily meeting to have a quick chat",
+      "category": "Hub",
+      "type": "Live",
+      "dateStart": "5/18/2022 1:00:00 PM",
+      "dateEnd": "5/18/2022 2:00:00 PM",
+      "users": [
+        "Mindaugas",
+        "Jonas",
+        "Birute"
+      ]
+    },
+    {
+      "name": "ASAP meeting",
+      "responsibleUser": "Petras",
+      "description": "I have something important!",
+      "category": "Hub",
+      "type": "Live",
+      "dateStart": "5/20/2022 4:50:00 AM",
+      "dateEnd": "5/20/2022 5:50:00 AM",
+      "users": [
+        "Tadas",
+        "Jonas",
+        "Mindaugas",
+        "Petras",
+        "Marija"
+      ]
+    }
+  ]
+}
