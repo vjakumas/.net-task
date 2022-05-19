@@ -1,48 +1,71 @@
-{
-  "meetings": [
-    {
-      "name": "First meeting",
-      "responsibleUser": "Tomas",
-      "description": "First meeting of this program",
-      "category": "Short",
-      "type": "Live",
-      "dateStart": "5/17/2022 4:50:00 PM",
-      "dateEnd": "5/17/2022 5:50:00 PM",
-      "users": [
-        "Tadas",
-        "Jonas",
-        "Birute"
-      ]
-    },
-    {
-      "name": "Daily meeting",
-      "responsibleUser": "Jonas",
-      "description": "Daily meeting to have a quick chat",
-      "category": "Hub",
-      "type": "Live",
-      "dateStart": "5/18/2022 1:00:00 PM",
-      "dateEnd": "5/18/2022 2:00:00 PM",
-      "users": [
-        "Mindaugas",
-        "Jonas",
-        "Birute"
-      ]
-    },
-    {
-      "name": "ASAP meeting",
-      "responsibleUser": "Petras",
-      "description": "I have something important!",
-      "category": "Hub",
-      "type": "Live",
-      "dateStart": "5/20/2022 4:50:00 AM",
-      "dateEnd": "5/20/2022 5:50:00 AM",
-      "users": [
-        "Tadas",
-        "Jonas",
-        "Mindaugas",
-        "Petras",
-        "Marija"
-      ]
-    }
-  ]
-}
+[
+  {
+    "Id": 1,
+    "Name": "First meeting",
+    "ResponsibleUser": "Tomas",
+    "Description": "First meeting of this program",
+    "Category": "Short",
+    "Type": "Live",
+    "DateStart": "2022-05-17T16:50:00",
+    "DateEnd": "2022-05-17T17:50:00",
+    "AttendingUsers": [
+      "Tadas",
+      "Birute"
+    ]
+  },
+  {
+    "Id": 2,
+    "Name": "Daily meeting",
+    "ResponsibleUser": "Jonas",
+    "Description": "Daily meeting to have a quick chat",
+    "Category": "Hub",
+    "Type": "Live",
+    "DateStart": "2022-05-18T13:00:00",
+    "DateEnd": "2022-05-18T14:00:00",
+    "AttendingUsers": [
+      "Mindaugas",
+      "Birute"
+    ]
+  },
+  {
+    "Id": 3,
+    "Name": "ASAP meeting",
+    "ResponsibleUser": "Petras",
+    "Description": "Something important!",
+    "Category": "Hub",
+    "Type": "Live",
+    "DateStart": "2022-05-20T04:50:00",
+    "DateEnd": "2022-05-20T05:50:00",
+    "AttendingUsers": [
+      "Tadas",
+      "Mindaugas",
+      "Petras",
+      "Marija"
+    ]
+  },
+  {
+    "Id": 4,
+    "Name": "Everything is fine",
+    "ResponsibleUser": "Michael Scott",
+    "Description": "We’re all homos. Homo… Sapiens.",
+    "Category": "Hub",
+    "Type": "InPerson",
+    "DateStart": "2022-02-25T14:00:00",
+    "DateEnd": "2022-02-25T16:00:00",
+    "AttendingUsers": [
+      "Jim",
+      "Petras"
+    ]
+  },
+  {
+    "Id": 5,
+    "Name": "Team building",
+    "ResponsibleUser": "Michael Scott",
+    "Description": "I am Beyonce, always.",
+    "Category": "Hub",
+    "Type": "Live",
+    "DateStart": "2022-02-25T15:00:00",
+    "DateEnd": "2022-02-25T15:30:00",
+    "AttendingUsers": []
+  }
+]

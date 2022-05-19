@@ -9,6 +9,7 @@ namespace Visma.Models
 {
     public class Meeting
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string ResponsibleUser { get; set; }
         public string Description { get; set; }
@@ -18,8 +19,9 @@ namespace Visma.Models
         public DateTime DateEnd { get; set; }
         public List<string> AttendingUsers { get; set; }
 
-        public Meeting(string name, string responsibleUser, string description, string category, string type, DateTime startDate, DateTime endDate, List<string> attendingUsers)
+        public Meeting(int id, string name, string responsibleUser, string description, string category, string type, DateTime startDate, DateTime endDate, List<string> attendingUsers)
         {
+            Id = id;
             Name = name;
             ResponsibleUser = responsibleUser;
             Description = description;
@@ -30,8 +32,9 @@ namespace Visma.Models
             AttendingUsers = attendingUsers;
         }
 
-        public Meeting(string name, string responsibleUser, string description, string category, string type, DateTime startDate, DateTime endDate)
+        public Meeting(int id, string name, string responsibleUser, string description, string category, string type, DateTime startDate, DateTime endDate)
         {
+            Id = id;
             Name = name;
             ResponsibleUser = responsibleUser;
             Description = description;
@@ -44,5 +47,17 @@ namespace Visma.Models
 
         public Meeting() { }
 
+
+        public override string ToString()
+        {
+            string users = "";
+            foreach (var user in AttendingUsers)
+                if (!AttendingUsers.Last().Equals(user))
+                    users += user + ", ";
+                else
+                    users += user;
+            return String.Format("| {0,3} | {1,20} | {2,16} | {3,40} | {4,10} | {5,8} | {6,21} | {7,21} | {8}",
+                Id, Name, ResponsibleUser, Description, Category, Type, DateStart, DateEnd, users);
+        }
     }
 }
